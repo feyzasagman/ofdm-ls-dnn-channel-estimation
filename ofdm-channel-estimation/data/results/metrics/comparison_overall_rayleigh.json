@@ -1,0 +1,11 @@
+{
+  "ls_mse": 1.3859193575444007,
+  "ls_nmse": 1.4555222057165287,
+  "mmse_mse": 1.3513977265380772,
+  "mmse_nmse": 1.4192668491304972,
+  "ls_dnn_mse": 0.24940425040315403,
+  "ls_dnn_nmse": 0.2619296880652316,
+  "raw_path": "data\\raw\\rayleigh_ns100_seed42.npz",
+  "processed_path": "data\\processed\\rayleigh_ns100_seed42_residual_processed.npz",
+  "model_path": "data\\results\\logs\\rayleigh_ns100_seed42_residual_processed_dnn.keras"
+}

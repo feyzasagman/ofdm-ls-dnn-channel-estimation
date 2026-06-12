@@ -1,0 +1,11 @@
+{
+  "ls_mse": 1.307416216387929,
+  "ls_nmse": 1.3510929965730334,
+  "mmse_mse": 1.2763696372682976,
+  "mmse_nmse": 1.3190092461266962,
+  "ls_dnn_mse": 0.19141663213777863,
+  "ls_dnn_nmse": 0.19781127684767455,
+  "raw_path": "data\\raw\\rician_ns100_seed42.npz",
+  "processed_path": "data\\processed\\rician_ns100_seed42_residual_processed.npz",
+  "model_path": "data\\results\\logs\\rician_ns100_seed42_residual_processed_dnn.keras"
+}

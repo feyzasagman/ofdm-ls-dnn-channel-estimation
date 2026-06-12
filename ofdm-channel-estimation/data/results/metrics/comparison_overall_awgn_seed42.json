@@ -1,0 +1,11 @@
+{
+  "ls_mse": 1.3819803875347612,
+  "ls_nmse": 1.381980387534761,
+  "mmse_mse": 1.3487828576515122,
+  "mmse_nmse": 1.3487828576515122,
+  "ls_dnn_mse": 0.1341795175466083,
+  "ls_dnn_nmse": 0.13417951754660834,
+  "raw_path": "data\\raw\\awgn_ns100_seed42.npz",
+  "processed_path": "data\\processed\\awgn_ns100_seed42_residual_processed.npz",
+  "model_path": "data\\results\\logs\\awgn_ns100_seed42_residual_processed_dnn.keras"
+}

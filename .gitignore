@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated datasets and trained models (regenerate with scripts)
+ofdm-channel-estimation/data/raw/*.npz
+ofdm-channel-estimation/data/processed/*.npz
+ofdm-channel-estimation/data/results/logs/*.keras
+ofdm-channel-estimation/data/results/logs/*_eval.npz
+ofdm-channel-estimation/data/results/metrics/*.npz
+
+# Generated figures (regenerate with scripts 04–10)
+ofdm-channel-estimation/data/results/figures/
+
+# MATLAB
+*.asv
+
+# Keep empty directory structure
+!ofdm-channel-estimation/data/raw/.gitkeep
+!ofdm-channel-estimation/data/processed/.gitkeep
+!ofdm-channel-estimation/data/results/figures/.gitkeep
