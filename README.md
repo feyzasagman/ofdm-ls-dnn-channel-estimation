@@ -1,25 +1,22 @@
-# Enhancing Least Square Channel Estimation Using Deep Learning
+# OFDM Channel Estimation: LS, Simplified-MMSE, LMMSE-flat, and LS+DNN
 
-Python reimplementation and extension of the LS-DNN channel estimator from the IEEE VTC 2020 paper [*Enhancing Least Square Channel Estimation Using Deep Learning*](https://ieeexplore.ieee.org/document/9128876).
-
-This repository contains:
+This repository provides an independently implemented and reproducible SISO-OFDM simulation framework for comparing LS, Simplified-MMSE, LMMSE-flat, and residual LS+DNN channel estimation methods under AWGN, single-tap Rayleigh flat fading, and single-tap Rician flat fading.
 
 | Folder | Description |
-|--------|-------------|
-| **`ofdm-channel-estimation/`** | Modern, end-to-end **Python** pipeline (main project) |
-| `MatLab_Codes/` | Original MATLAB OFDM simulation from the paper authors |
-| `Python_Codes/` | Original Keras training/testing scripts from the paper authors |
+| --- | --- |
+| **`ofdm-channel-estimation/`** | Main Python package: simulation, training, evaluation, and revision manuscript outputs |
+| `MatLab_Codes/` | Legacy MATLAB reference materials not used by the main revision pipeline |
+| `Python_Codes/` | Legacy Python/Keras reference materials not used by the main revision pipeline |
 
-> The `ofdm-channel-estimation` module is a clean-room Python rewrite with modular source code, pytest integration tests, multi-channel support (AWGN / Rayleigh / Rician), and reproducible experiment scripts.
+Full documentation, system parameters, metrics, and limitations are in [`ofdm-channel-estimation/README.md`](ofdm-channel-estimation/README.md).
 
 ## Highlights
 
-- **OFDM modem** with QPSK data and comb pilots
-- **Classical estimators**: Least Squares (LS) and MMSE
-- **Deep learning**: fully-connected DNN that refines LS estimates (residual learning)
-- **Channel models**: AWGN, flat Rayleigh fading, flat Rician fading
-- **Benchmarking**: MSE / NMSE comparison across SNR (−10 … 30 dB)
-- **Reproducibility**: fixed seeds, multi-seed aggregation, metric export (CSV / JSON)
+- **SISO-OFDM** with QPSK and comb pilots (64 subcarriers, 16 pilots)
+- **Estimators:** LS, Simplified-MMSE (Wiener-shrinkage), LMMSE-flat, residual LS+DNN
+- **Channels:** AWGN reference, single-tap Rayleigh flat fading, single-tap Rician flat fading (\(K = 6\) dB) — no frequency-selective multipath
+- **Metrics:** MSE, NMSE, end-to-end BER, SNR gain at target BER, high-SNR behavior, inference complexity
+- **Reproducibility:** SNR-stratified splits, seeds 42 / 123 / 999, exported JSON/CSV under `data/results/revision/`
 
 ## Quick start
 
@@ -37,80 +34,50 @@ pip install -r requirements.txt
 pytest tests/ -v
 ```
 
-### Full experiment pipeline (example: Rayleigh)
+### Major-revision experiment pipeline
 
 ```bash
-# 1. Generate raw + processed datasets
-python scripts/01_generate_data.py --channel-type rayleigh --samples-per-snr 100 --seed 42
+cd ofdm-channel-estimation
 
-# 2. Train DNN
-python scripts/02_train_dnn.py --processed-path data/processed/rayleigh_ns100_seed42_residual_processed.npz
+# Regenerate datasets, models, and revision metrics (optional flags: --skip-generate, --skip-train)
+python scripts/20_run_revision_pipeline.py
 
-# 3. Compare LS vs MMSE vs LS+DNN
-python scripts/03_run_comparison.py ^
-  --raw-path data/raw/rayleigh_ns100_seed42.npz ^
-  --processed-path data/processed/rayleigh_ns100_seed42_residual_processed.npz ^
-  --model-path data/results/logs/rayleigh_ns100_seed42_residual_processed_dnn.keras ^
-  --tag rayleigh
-
-# 4. Plot SNR curves
-python scripts/04_plot_results.py --input-csv data/results/metrics/comparison_per_snr_rayleigh.csv
-
-# 5–10. Additional analysis plots (overall bars, seed stats, training history, etc.)
-python scripts/06_plot_overall_comparison.py
-python scripts/10_plot_improvement_percentage.py
+# Build final manuscript figures and tables
+python scripts/21_build_final_figures_tables.py
 ```
 
-Repeat with `--channel-type awgn` or `--channel-type rician` for other channel models.
+Legacy scripts `01`–`10` under `ofdm-channel-estimation/scripts/` target an older `data/raw` layout; new work should use scripts **20** and **21**.
 
-## Sample results (seed = 42, 100 samples/SNR)
-
-| Channel  | LS MSE | MMSE MSE | LS+DNN MSE |
-|----------|--------|----------|------------|
-| AWGN     | 1.38   | 1.35     | **0.13**   |
-| Rayleigh | 1.39   | 1.35     | **0.25**   |
-| Rician   | 1.31   | 1.28     | **0.19**   |
-
-Full per-SNR metrics are stored under `ofdm-channel-estimation/data/results/metrics/`.
-
-## Project structure
+## Repository layout (main package)
 
 ```
 ofdm-channel-estimation/
-├── scripts/          # Numbered experiment pipeline (01–10)
-├── src/
-│   ├── core/         # OFDM params, modem, pilots, metrics
-│   ├── channels/     # AWGN, Rayleigh, Rician
-│   ├── estimators/   # LS, MMSE
-│   ├── dataset/      # Data generation & preprocessing
-│   └── dnn/          # Model, training, evaluation
-├── tests/            # Integration tests
-├── data/
-│   ├── raw/          # Generated NPZ (gitignored)
-│   ├── processed/    # DNN-ready NPZ (gitignored)
-│   └── results/      # Metrics, logs, figures
+├── scripts/          # Pipelines 20–21 (revision) and legacy 01–10
+├── src/              # channels, core, dataset, dnn, estimators, revision
+├── tests/
+├── data/results/revision/   # BER, MSE/NMSE, SNR gain, final_figures, final_tables, …
 └── requirements.txt
 ```
 
+Generated raw NPZ, processed tensors, and trained `.keras` models are gitignored and reproduced by the revision pipeline.
+
+## Related work
+
+Gizzini, F., et al., *“Enhancing Least Square Channel Estimation Using Deep Learning,”* IEEE VTC2020-Spring, 2020.  
+DOI: [10.1109/VTC2020-Spring48590.2020.9128890](https://doi.org/10.1109/VTC2020-Spring48590.2020.9128890)
+
+No source code from Gizzini et al. or any other cited study was reused or adapted in this repository. The simulation, data-generation, training, and evaluation pipeline was independently implemented.
+
+The `MatLab_Codes/` and `Python_Codes/` folders are legacy reference materials and are not imported or called by the `ofdm-channel-estimation/` revision pipeline.
+
 ## Citation
 
-If you use the original method, please cite the paper:
+If you use this repository, please cite the associated manuscript once it is published.
 
-```bibtex
-@inproceedings{el2020enhancing,
-  title={Enhancing Least Square Channel Estimation Using Deep Learning},
-  booktitle={2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring)},
-  year={2020},
-  organization={IEEE}
-}
-```
+For the LS+DNN line of work in the literature, you may also cite Gizzini et al. (VTC 2020) as above.
 
-## License
+## Authors / license
 
-The `ofdm-channel-estimation` Python code is released under the [MIT License](LICENSE).
+Author names and affiliations are given in the associated manuscript. This repository does not include a separate `AUTHORS` file.
 
-The `MatLab_Codes/` and `Python_Codes/` directories contain the original implementation accompanying the IEEE paper. Refer to the paper and original authors for usage terms.
-
-## Acknowledgements
-
-Based on the LS-DNN channel estimation approach proposed in the IEEE VTC 2020 paper. Original MATLAB and Keras code is included for reference.
+No `LICENSE` file is currently present at the repository root; do not assume a specific open-source license unless one is added explicitly.
