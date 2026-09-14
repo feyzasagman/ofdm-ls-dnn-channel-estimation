@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="780" viewBox="0 0 1960 780">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+<polygon points="0,0 8,3 0,6" fill="#222"/></marker>
+</defs>
+<rect x="880" y="70" width="200" height="64" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="980" y="94" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">H_LS (128)</text>
+<text x="980" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">[Re{H_LS}, Im{H_LS}]</text>
+<line x1="980" y1="136" x2="980" y2="162" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="980" y1="154" x2="980" y2="154" stroke="#222" stroke-width="1.8"/>
+<line x1="980" y1="154" x2="680" y2="154" stroke="#222" stroke-width="1.8"/>
+<line x1="680" y1="154" x2="680" y2="206" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="980" y1="154" x2="980" y2="168" stroke="#222" stroke-width="1.8"/>
+<line x1="980" y1="168" x2="1760" y2="168" stroke="#222" stroke-width="1.8"/>
+<line x1="1760" y1="168" x2="1760" y2="430" stroke="#222" stroke-width="1.8"/>
+<line x1="1760" y1="430" x2="1006" y2="430" stroke="#222" stroke-width="1.8"/>
+<text x="1752" y="154" font-family="Arial, Helvetica, sans-serif" font-size="11px" fill="#111" text-anchor="end" dominant-baseline="middle">skip connection</text>
+<text x="994" y="172" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">H_LS</text>
+<rect x="220" y="200" width="920" height="118" rx="8" ry="8" fill="#f8f8f8" stroke="#555" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="292" y="218" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">DNN</text>
+<text x="1128" y="334" font-family="Arial, Helvetica, sans-serif" font-size="11px" fill="#111" text-anchor="end" dominant-baseline="middle">131,712 trainable parameters</text>
+<rect x="256" y="221" width="118" height="46" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="315" y="244" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">Dense (256)</text>
+<rect x="396" y="221" width="72" height="46" rx="6" ry="6" fill="#f4f4f4" stroke="#222" stroke-width="1.8"/>
+<text x="432" y="244" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">ReLU</text>
+<line x1="376" y1="244" x2="386" y2="244" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="490" y="221" width="118" height="46" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="549" y="244" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">Dense (256)</text>
+<line x1="470" y1="244" x2="480" y2="244" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="630" y="221" width="72" height="46" rx="6" ry="6" fill="#f4f4f4" stroke="#222" stroke-width="1.8"/>
+<text x="666" y="244" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">ReLU</text>
+<line x1="610" y1="244" x2="620" y2="244" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="724" y="221" width="118" height="46" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="783" y="244" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">Dense (128)</text>
+<line x1="704" y1="244" x2="714" y2="244" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="680" y1="320" x2="680" y2="350" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="680" y="358" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Predicted Residual</text>
+<text x="680" y="380" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">r̂ = fθ(H_LS)</text>
+<line x1="680" y1="392" x2="680" y2="412" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<circle cx="980" cy="430" r="22" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="980" y="430" font-family="Arial, Helvetica, sans-serif" font-size="19px" fill="#111" text-anchor="middle" dominant-baseline="middle">+</text>
+<line x1="980" y1="454" x2="980" y2="506" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="832" y="500" width="296" height="58" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="980" y="529" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Refined LS+DNN Estimate</text>
+<text x="980" y="580" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">H_LS+DNN = H_LS + r̂</text>
+<rect x="280" y="600" width="1400" height="130" rx="8" ry="8" fill="#f8f8f8" stroke="#555" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="304" y="622" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="start" dominant-baseline="middle">Training Details</text>
+<text x="304" y="648" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Input: LS estimate</text>
+<text x="304" y="668" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Target: Residual = True Channel − LS Estimate</text>
+<text x="304" y="688" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Loss: Mean Squared Error (MSE)</text>
+<text x="304" y="708" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Optimizer: Adam</text>
+<text x="1000" y="648" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Learning rate: 1 × 10⁻³</text>
+<text x="1000" y="668" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Batch size: 64</text>
+<text x="1000" y="688" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Maximum epochs: 60</text>
+<text x="1000" y="708" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="start" dominant-baseline="middle">Early stopping: Patience = 8</text>
+</svg>

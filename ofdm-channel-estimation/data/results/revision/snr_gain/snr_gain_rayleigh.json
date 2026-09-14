@@ -1,0 +1,27 @@
+{
+  "channel": "rayleigh",
+  "n_seeds": 3,
+  "snr_gain": {
+    "target_ber_0.1": {
+      "target_ber": 0.1,
+      "status": "estimable",
+      "snr_ls_db": 3.862362343472532,
+      "snr_dnn_db": 2.18156106181289,
+      "snr_gain_db": 1.680801281659642
+    },
+    "target_ber_0.01": {
+      "target_ber": 0.01,
+      "status": "estimable",
+      "snr_ls_db": 8.35741015808092,
+      "snr_dnn_db": 7.456476380811584,
+      "snr_gain_db": 0.9009337772693362
+    },
+    "target_ber_0.001": {
+      "target_ber": 0.001,
+      "status": "not estimable within simulated SNR range",
+      "snr_ls_db": null,
+      "snr_dnn_db": null,
+      "snr_gain_db": null
+    }
+  }
+}

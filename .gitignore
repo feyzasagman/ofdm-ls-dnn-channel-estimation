@@ -46,3 +46,9 @@ ofdm-channel-estimation/data/results/figures/
 !ofdm-channel-estimation/data/raw/.gitkeep
 !ofdm-channel-estimation/data/processed/.gitkeep
 !ofdm-channel-estimation/data/results/figures/.gitkeep
+
+# Revision archives and bulky generated artifacts
+ofdm-channel-estimation/data/results/archive_pre_revision/
+ofdm-channel-estimation/data/results/revision/raw/
+ofdm-channel-estimation/data/results/revision/processed/
+ofdm-channel-estimation/data/results/revision/models/

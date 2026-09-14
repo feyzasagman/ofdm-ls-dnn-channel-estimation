@@ -1,0 +1,8 @@
+# Table 11 — Computational Complexity
+
+| Estimator | Mean inference time (s) | Std inference time (s) | Trainable parameters | Measurement environment |
+| --- | --- | --- | --- | --- |
+| LS | 2.11694e-05 | 7.59927e-06 | — | Windows-11-10.0.26200-SP0, Python 3.13.3, Intel64 Family 6 Model 154 Stepping 3, GenuineIntel |
+| Simplified-MMSE | 3.0743e-05 | 1.60358e-05 | — | Windows-11-10.0.26200-SP0, Python 3.13.3, Intel64 Family 6 Model 154 Stepping 3, GenuineIntel |
+| LMMSE-flat | 9.02278e-06 | 2.00047e-06 | — | Windows-11-10.0.26200-SP0, Python 3.13.3, Intel64 Family 6 Model 154 Stepping 3, GenuineIntel |
+| LS+DNN | 0.0621396 | 0.00835517 | 131712 | Windows-11-10.0.26200-SP0, Python 3.13.3, Intel64 Family 6 Model 154 Stepping 3, GenuineIntel |

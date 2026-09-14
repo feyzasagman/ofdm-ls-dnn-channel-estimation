@@ -1,0 +1,64 @@
+{
+  "random_seed": 42,
+  "split_strategy": "snr_stratified",
+  "total_samples": 900,
+  "training_samples": 648,
+  "validation_samples": 72,
+  "test_samples": 180,
+  "samples_per_snr": {
+    "-10.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "-5.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "0.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "5.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "10.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "15.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "20.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "25.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    },
+    "30.0": {
+      "total": 100,
+      "train": 72,
+      "val": 8,
+      "test": 20
+    }
+  }
+}

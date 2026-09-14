@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "seed": 999,
+    "channel_type": "rayleigh",
+    "channel_model_name": "single-tap Rayleigh flat fading",
+    "flat_fading": true,
+    "frequency_selective": false,
+    "raw_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\raw\\rayleigh_ns100_seed999.npz",
+    "processed_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\processed\\rayleigh_ns100_seed999_residual_processed.npz",
+    "model_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\models\\rayleigh_ns100_seed999_residual_processed_dnn.keras",
+    "split_strategy": "snr_stratified"
+  },
+  "per_snr": {
+    "-10.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 869,
+        "ber": 0.45260416666666664
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 868,
+        "ber": 0.45208333333333334
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 810,
+        "ber": 0.421875
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 819,
+        "ber": 0.4265625
+      }
+    },
+    "-5.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 768,
+        "ber": 0.4
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 772,
+        "ber": 0.40208333333333335
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 581,
+        "ber": 0.3026041666666667
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 638,
+        "ber": 0.33229166666666665
+      }
+    },
+    "0.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 442,
+        "ber": 0.23020833333333332
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 440,
+        "ber": 0.22916666666666666
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 319,
+        "ber": 0.16614583333333333
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 345,
+        "ber": 0.1796875
+      }
+    },
+    "5.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 146,
+        "ber": 0.07604166666666666
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 146,
+        "ber": 0.07604166666666666
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 71,
+        "ber": 0.03697916666666667
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 89,
+        "ber": 0.04635416666666667
+      }
+    },
+    "10.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 7,
+        "ber": 0.0036458333333333334
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 7,
+        "ber": 0.0036458333333333334
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 2,
+        "ber": 0.0010416666666666667
+      }
+    },
+    "15.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      }
+    },
+    "20.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      }
+    },
+    "25.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      }
+    },
+    "30.0": {
+      "ls": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "simplified_mmse": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "lmmse_flat": {
+        "total_bits": 1920,
+        "erroneous_bits": 0,
+        "ber": 0.0
+      },
+      "ls_dnn": {
+        "total_bits": 1920,
+        "erroneous_bits": 3,
+        "ber": 0.0015625
+      }
+    }
+  },
+  "overall": {
+    "ls": {
+      "total_bits": 17280,
+      "erroneous_bits": 2232,
+      "ber": 0.12916666666666668
+    },
+    "simplified_mmse": {
+      "total_bits": 17280,
+      "erroneous_bits": 2233,
+      "ber": 0.12922453703703704
+    },
+    "lmmse_flat": {
+      "total_bits": 17280,
+      "erroneous_bits": 1781,
+      "ber": 0.10306712962962963
+    },
+    "ls_dnn": {
+      "total_bits": 17280,
+      "erroneous_bits": 1896,
+      "ber": 0.10972222222222222
+    }
+  },
+  "methods": [
+    "ls",
+    "simplified_mmse",
+    "lmmse_flat",
+    "ls_dnn"
+  ]
+}

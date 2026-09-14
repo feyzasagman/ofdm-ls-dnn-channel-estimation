@@ -1,0 +1,16 @@
+{
+  "seed": 999,
+  "channel_type": "rician",
+  "channel_model_name": "single-tap Rician flat fading",
+  "flat_fading": true,
+  "frequency_selective": false,
+  "k_factor_db": 6.0,
+  "rician_note": "h = h_los + h_scatter with K = P_los/P_scatter; LoS amplitude sqrt(K/(K+1)), scatter std sqrt(1/(2(K+1))).",
+  "raw_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\raw\\rician_ns100_seed999.npz",
+  "processed_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\processed\\rician_ns100_seed999_residual_processed.npz",
+  "model_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\models\\rician_ns100_seed999_residual_processed_dnn.keras",
+  "split_strategy": "snr_stratified",
+  "snr_db": 10.0,
+  "sample_index": 400,
+  "caption_note": "Flat fading: |H| is constant across subcarriers."
+}

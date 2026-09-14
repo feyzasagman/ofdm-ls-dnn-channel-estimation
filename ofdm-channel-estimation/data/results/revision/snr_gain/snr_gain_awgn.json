@@ -1,0 +1,27 @@
+{
+  "channel": "awgn",
+  "n_seeds": 3,
+  "snr_gain": {
+    "target_ber_0.1": {
+      "target_ber": 0.1,
+      "status": "estimable",
+      "snr_ls_db": 3.7066747067757984,
+      "snr_dnn_db": 1.9247001363688137,
+      "snr_gain_db": 1.7819745704069847
+    },
+    "target_ber_0.01": {
+      "target_ber": 0.01,
+      "status": "estimable",
+      "snr_ls_db": 8.862640824971265,
+      "snr_dnn_db": 7.4033191073388736,
+      "snr_gain_db": 1.4593217176323918
+    },
+    "target_ber_0.001": {
+      "target_ber": 0.001,
+      "status": "not estimable within simulated SNR range",
+      "snr_ls_db": null,
+      "snr_dnn_db": null,
+      "snr_gain_db": null
+    }
+  }
+}

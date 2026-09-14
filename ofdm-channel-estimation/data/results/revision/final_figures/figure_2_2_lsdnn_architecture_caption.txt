@@ -1,0 +1,1 @@
+Figure 2.2. Residual LS+DNN channel estimation architecture showing the feed-forward network and skip connection used to refine the LS estimate.

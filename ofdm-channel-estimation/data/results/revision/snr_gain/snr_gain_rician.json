@@ -1,0 +1,27 @@
+{
+  "channel": "rician",
+  "n_seeds": 3,
+  "snr_gain": {
+    "target_ber_0.1": {
+      "target_ber": 0.1,
+      "status": "estimable",
+      "snr_ls_db": 3.762473546340072,
+      "snr_dnn_db": 2.2056411476966113,
+      "snr_gain_db": 1.5568323986434605
+    },
+    "target_ber_0.01": {
+      "target_ber": 0.01,
+      "status": "estimable",
+      "snr_ls_db": 8.53784616842399,
+      "snr_dnn_db": 7.226567556984238,
+      "snr_gain_db": 1.3112786114397519
+    },
+    "target_ber_0.001": {
+      "target_ber": 0.001,
+      "status": "not estimable within simulated SNR range",
+      "snr_ls_db": null,
+      "snr_dnn_db": null,
+      "snr_gain_db": null
+    }
+  }
+}

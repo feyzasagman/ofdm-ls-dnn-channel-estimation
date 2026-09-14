@@ -1,0 +1,21 @@
+{
+  "figure_id": "Figure 3.7",
+  "seed": 42,
+  "channels": [
+    "awgn",
+    "rayleigh",
+    "rician"
+  ],
+  "sources": [
+    "data\\results\\revision\\training\\history_awgn_seed42.json",
+    "data\\results\\revision\\training\\history_rayleigh_seed42.json",
+    "data\\results\\revision\\training\\history_rician_seed42.json"
+  ],
+  "reference_figures": [
+    "final_figures/fig_training_awgn.png",
+    "final_figures/fig_training_rayleigh.png",
+    "final_figures/fig_training_rician.png"
+  ],
+  "caption": "Figure 3.7. Representative training and validation loss curves of the LS+DNN models for AWGN, Rayleigh, and Rician scenarios (seed = 42).",
+  "note": "Loss values read directly from revision training histories; not recomputed."
+}

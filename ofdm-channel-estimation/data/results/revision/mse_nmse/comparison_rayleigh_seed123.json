@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "seed": 123,
+    "channel_type": "rayleigh",
+    "channel_model_name": "single-tap Rayleigh flat fading",
+    "flat_fading": true,
+    "frequency_selective": false,
+    "raw_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\raw\\rayleigh_ns100_seed123.npz",
+    "processed_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\processed\\rayleigh_ns100_seed123_residual_processed.npz",
+    "model_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\models\\rayleigh_ns100_seed123_residual_processed_dnn.keras",
+    "split_strategy": "snr_stratified"
+  },
+  "overall": {
+    "ls_mse": 1.2934938025637197,
+    "ls_nmse": 1.3571925502969315,
+    "simplified_mmse_mse": 1.2627525987717167,
+    "simplified_mmse_nmse": 1.324937480584983,
+    "lmmse_flat_mse": 0.10225510788778508,
+    "lmmse_flat_nmse": 0.1072907116988482,
+    "ls_dnn_mse": 0.3020645172540975,
+    "ls_dnn_nmse": 0.3169398351300603
+  },
+  "per_snr": [
+    {
+      "snr_db": -10.0,
+      "ls_mse": 9.100741129569261,
+      "ls_nmse": 6.713264442824341,
+      "simplified_mmse_mse": 8.858862593102895,
+      "simplified_mmse_nmse": 6.534840009558552,
+      "lmmse_flat_mse": 0.6112982790111428,
+      "lmmse_flat_nmse": 0.45093107715277375,
+      "ls_dnn_mse": 2.0205198347627156,
+      "ls_dnn_nmse": 1.4904592680547821
+    },
+    {
+      "snr_db": -5.0,
+      "ls_mse": 1.3640305692574273,
+      "ls_nmse": 2.329339313390485,
+      "simplified_mmse_mse": 1.3396975905081248,
+      "simplified_mmse_nmse": 2.2877861654698326,
+      "lmmse_flat_mse": 0.20507575881414047,
+      "lmmse_flat_nmse": 0.3502055144476826,
+      "ls_dnn_mse": 0.43735417071988875,
+      "ls_dnn_nmse": 0.7468646866820089
+    },
+    {
+      "snr_db": 0.0,
+      "ls_mse": 0.8617634303935496,
+      "ls_nmse": 0.7125419689107286,
+      "simplified_mmse_mse": 0.8512113102883246,
+      "simplified_mmse_nmse": 0.7038170356276745,
+      "lmmse_flat_mse": 0.07679142167954467,
+      "lmmse_flat_nmse": 0.06349435224236492,
+      "ls_dnn_mse": 0.16503008121447427,
+      "ls_dnn_nmse": 0.13645375848027994
+    },
+    {
+      "snr_db": 5.0,
+      "ls_mse": 0.20776145347217287,
+      "ls_nmse": 0.2275014177252375,
+      "simplified_mmse_mse": 0.2078104651373275,
+      "simplified_mmse_nmse": 0.2275550861181054,
+      "lmmse_flat_mse": 0.018484719995093265,
+      "lmmse_flat_nmse": 0.0202410020475767,
+      "ls_dnn_mse": 0.05233783436858186,
+      "ls_dnn_nmse": 0.057310590201063556
+    },
+    {
+      "snr_db": 10.0,
+      "ls_mse": 0.08072228570628653,
+      "ls_nmse": 0.06623529243712004,
+      "simplified_mmse_mse": 0.08076250476594818,
+      "simplified_mmse_nmse": 0.06626829349940323,
+      "lmmse_flat_mse": 0.006414007701866347,
+      "lmmse_flat_nmse": 0.005262904439708802,
+      "ls_dnn_mse": 0.02205749506768203,
+      "ls_dnn_nmse": 0.018098900736707866
+    },
+    {
+      "snr_db": 15.0,
+      "ls_mse": 0.020222700404793056,
+      "ls_nmse": 0.022850923088645544,
+      "simplified_mmse_mse": 0.02022587884773829,
+      "simplified_mmse_nmse": 0.022854514614694454,
+      "lmmse_flat_mse": 0.0016904962810237272,
+      "lmmse_flat_nmse": 0.0019101999103027219,
+      "ls_dnn_mse": 0.008199776800402713,
+      "ls_dnn_nmse": 0.009265452449943461
+    },
+    {
+      "snr_db": 20.0,
+      "ls_mse": 0.003823792066846633,
+      "ls_nmse": 0.007329097636733063,
+      "simplified_mmse_mse": 0.0038240755336002388,
+      "simplified_mmse_nmse": 0.007329640960082665,
+      "lmmse_flat_mse": 0.0003785991834551485,
+      "lmmse_flat_nmse": 0.0007256645581720876,
+      "ls_dnn_mse": 0.0039959127579418325,
+      "ls_dnn_nmse": 0.0076590029580177
+    },
+    {
+      "snr_db": 25.0,
+      "ls_mse": 0.0016887695439657413,
+      "ls_nmse": 0.0019897149895762053,
+      "simplified_mmse_mse": 0.0016889647090640278,
+      "simplified_mmse_nmse": 0.0019899449338707897,
+      "lmmse_flat_mse": 0.00011108417302711146,
+      "lmmse_flat_nmse": 0.00013087981422123767,
+      "ls_dnn_mse": 0.004124522704083005,
+      "ls_dnn_nmse": 0.004859529044969454
+    },
+    {
+      "snr_db": 30.0,
+      "ls_mse": 0.0006900926591728883,
+      "ls_nmse": 0.0006638470098744798,
+      "simplified_mmse_mse": 0.0006900060524311948,
+      "simplified_mmse_nmse": 0.0006637636969660695,
+      "lmmse_flat_mse": 5.160415077190924e-05,
+      "lmmse_flat_nmse": 4.9641538323422935e-05,
+      "ls_dnn_mse": 0.004961026891106587,
+      "ls_dnn_nmse": 0.004772348790835219
+    }
+  ]
+}

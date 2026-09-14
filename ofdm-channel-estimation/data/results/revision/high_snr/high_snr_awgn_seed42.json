@@ -1,0 +1,50 @@
+{
+  "channel_type": "awgn",
+  "seed": 42,
+  "high_snr_levels_db": [
+    20.0,
+    25.0,
+    30.0
+  ],
+  "rows": [
+    {
+      "channel_type": "awgn",
+      "seed": 42,
+      "snr_db": 20.0,
+      "ls_mse": 0.006987350261864643,
+      "ls_dnn_mse": 0.0011466786810852758,
+      "dnn_worse_than_ls": false,
+      "ratio_dnn_over_ls": 0.1641078002549243,
+      "percent_difference": -83.58921997450756
+    },
+    {
+      "channel_type": "awgn",
+      "seed": 42,
+      "snr_db": 25.0,
+      "ls_mse": 0.0023387222656579684,
+      "ls_dnn_mse": 0.0006586691766017343,
+      "dnn_worse_than_ls": false,
+      "ratio_dnn_over_ls": 0.2816363388991067,
+      "percent_difference": -71.83636611008933
+    },
+    {
+      "channel_type": "awgn",
+      "seed": 42,
+      "snr_db": 30.0,
+      "ls_mse": 0.0006731070498798782,
+      "ls_dnn_mse": 0.0003820762160259332,
+      "dnn_worse_than_ls": false,
+      "ratio_dnn_over_ls": 0.5676306853332141,
+      "percent_difference": -43.236931466678584
+    }
+  ],
+  "n_worse_than_ls": 0,
+  "diagnostic_hypotheses": [
+    "mixed-SNR training may leave residual bias at high SNR",
+    "residual prediction bias when LS is already accurate",
+    "limited training samples per SNR stratum",
+    "float precision limits for very small NMSE differences",
+    "model capacity may be insufficient for near-oracle refinement"
+  ],
+  "note": "Diagnostic hypotheses are not proven causes; they require targeted ablation experiments."
+}

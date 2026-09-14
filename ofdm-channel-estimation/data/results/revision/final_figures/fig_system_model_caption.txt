@@ -1,0 +1,1 @@
+Figure 2.1. Block diagram of the SISO-OFDM transmission system and the channel estimation approaches evaluated in this study.

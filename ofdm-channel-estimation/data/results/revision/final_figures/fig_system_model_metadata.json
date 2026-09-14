@@ -1,0 +1,30 @@
+{
+  "figure_id": "Figure 2.1",
+  "output_stem": "fig_system_model",
+  "caption": "Figure 2.1. Block diagram of the SISO-OFDM transmission system and the channel estimation approaches evaluated in this study.",
+  "language": "English",
+  "title_on_figure": false,
+  "consistency_checklist": {
+    "qpsk_modulation": true,
+    "pilot_insertion": true,
+    "ifft_cp_addition": true,
+    "cp_removal_fft": true,
+    "awgn_flat": true,
+    "rayleigh_single_tap_flat": true,
+    "rician_single_tap_flat": true,
+    "ls_estimator": true,
+    "simplified_mmse_wiener_shrinkage": true,
+    "lmmse_flat": true,
+    "ls_dnn_residual": true,
+    "equalization": true,
+    "qpsk_demodulation": true,
+    "recovered_bits_for_ber": true,
+    "frequency_selective_multipath": false
+  },
+  "estimator_labels_match_revision_pipeline": [
+    "LS",
+    "Simplified-MMSE",
+    "LMMSE-flat",
+    "LS+DNN"
+  ]
+}

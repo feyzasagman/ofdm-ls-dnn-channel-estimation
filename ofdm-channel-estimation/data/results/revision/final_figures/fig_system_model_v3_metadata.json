@@ -1,0 +1,13 @@
+{
+  "figure_id": "Figure 2.1 (v3)",
+  "canvas_px": [
+    1600,
+    900
+  ],
+  "method": "fixed-coordinate manual SVG",
+  "caption": "Figure 2.1. Block diagram of the SISO-OFDM transmission system and the channel estimation approaches evaluated in this study.",
+  "notes": [
+    "Residual DNN detail deferred to Figure 2.2",
+    "No automatic graph layout engines used"
+  ]
+}

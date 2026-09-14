@@ -1,0 +1,33 @@
+{
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.13.3",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel"
+  },
+  "estimators": {
+    "ls": {
+      "n_reps": 100,
+      "mean_seconds": 1.8908001366071402e-05,
+      "std_seconds": 1.199638483991299e-06
+    },
+    "simplified_mmse": {
+      "n_reps": 100,
+      "mean_seconds": 2.6053001056425275e-05,
+      "std_seconds": 2.9912674196834037e-06
+    },
+    "lmmse_flat": {
+      "n_reps": 100,
+      "mean_seconds": 8.670000825077296e-06,
+      "std_seconds": 3.871722223482383e-07
+    },
+    "ls_dnn": {
+      "n_reps": 100,
+      "mean_seconds": 0.0636104129976593,
+      "std_seconds": 0.006510984454265112
+    }
+  },
+  "ls_dnn_model": {
+    "total_params": 131712,
+    "trainable_params": 131712
+  }
+}

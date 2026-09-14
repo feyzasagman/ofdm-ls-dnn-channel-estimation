@@ -1,0 +1,7 @@
+Channel,SNR (dB),LS MSE (mean over 3 seeds),LS+DNN MSE (mean over 3 seeds),Ratio (DNN/LS),LS+DNN worse than LS?
+rayleigh,20.0,0.00572529,0.00689205,1.2038,yes
+rayleigh,25.0,0.00213491,0.00638579,2.9911,yes
+rayleigh,30.0,0.000682663,0.00589309,8.6325,yes
+rician,20.0,0.00674751,0.00345523,0.5121,no
+rician,25.0,0.00240934,0.00277374,1.1512,yes
+rician,30.0,0.000679372,0.00187369,2.7580,yes

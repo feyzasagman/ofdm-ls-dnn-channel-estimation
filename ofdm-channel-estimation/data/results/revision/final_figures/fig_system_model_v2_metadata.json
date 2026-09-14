@@ -1,0 +1,6 @@
+{
+  "figure_id": "Figure 2.1 (v2)",
+  "layout": "two-row compact",
+  "output_stem": "fig_system_model_v2",
+  "caption": "Figure 2.1. Block diagram of the SISO-OFDM transmission system and the channel estimation approaches evaluated in this study."
+}

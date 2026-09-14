@@ -1,0 +1,1 @@
+Figure 3.13. BER versus SNR under the single-tap Rician flat-fading scenario (mean ± standard deviation over three independent repetitions). Zero BER values, corresponding to no observed bit errors in the finite test set, are omitted from the logarithmic plot.

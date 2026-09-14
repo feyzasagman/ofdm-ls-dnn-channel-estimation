@@ -1,0 +1,18 @@
+{
+  "caption": "Figure 2.1. Block diagram of the SISO-OFDM system and the channel estimation methods evaluated in this study.",
+  "methodology_checklist": {
+    "two_row_layout": true,
+    "main_flow_row1": true,
+    "channel_short_labels_awgn_rayleigh_rician": true,
+    "channel_note_single_tap_k6db": true,
+    "four_estimators_row2": true,
+    "no_ls_dnn_residual_detail_in_fig_2_1": true,
+    "estimators_merge_to_equalization": true,
+    "mse_nmse_single_evaluation_box": true,
+    "ber_only_at_receiver_end": true,
+    "simplified_mmse_not_mmse_only": true,
+    "lmmse_flat_included": true,
+    "no_multipath": true
+  },
+  "layout": "two-row"
+}

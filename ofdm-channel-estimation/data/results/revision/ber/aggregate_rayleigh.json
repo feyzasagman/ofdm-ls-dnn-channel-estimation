@@ -1,0 +1,114 @@
+{
+  "per_snr": [
+    {
+      "snr_db": -10.0,
+      "ls_ber_mean": 0.45086805555555554,
+      "ls_ber_std": 0.005663023066076419,
+      "simplified_mmse_ber_mean": 0.4517361111111111,
+      "simplified_mmse_ber_std": 0.0072335648111109905,
+      "lmmse_flat_ber_mean": 0.40295138888888893,
+      "lmmse_flat_ber_std": 0.02387641995324992,
+      "ls_dnn_ber_mean": 0.43072916666666666,
+      "ls_dnn_ber_std": 0.0286442550070238
+    },
+    {
+      "snr_db": -5.0,
+      "ls_ber_mean": 0.38472222222222224,
+      "ls_ber_std": 0.012334944214119176,
+      "simplified_mmse_ber_mean": 0.3861111111111111,
+      "simplified_mmse_ber_std": 0.01239345020664913,
+      "lmmse_flat_ber_mean": 0.30347222222222225,
+      "lmmse_flat_ber_std": 0.0036664430697817487,
+      "ls_dnn_ber_mean": 0.3201388888888889,
+      "ls_dnn_ber_std": 0.008852464433320802
+    },
+    {
+      "snr_db": 0.0,
+      "ls_ber_mean": 0.22604166666666667,
+      "ls_ber_std": 0.008202091535428974,
+      "simplified_mmse_ber_mean": 0.2255208333333333,
+      "simplified_mmse_ber_std": 0.008278902095532201,
+      "lmmse_flat_ber_mean": 0.16319444444444445,
+      "lmmse_flat_ber_std": 0.0025633373368460794,
+      "ls_dnn_ber_mean": 0.17239583333333333,
+      "ls_dnn_ber_std": 0.005953620902598004
+    },
+    {
+      "snr_db": 5.0,
+      "ls_ber_mean": 0.07864583333333335,
+      "ls_ber_std": 0.00185365941875544,
+      "simplified_mmse_ber_mean": 0.07881944444444444,
+      "simplified_mmse_ber_std": 0.0019641855032959715,
+      "lmmse_flat_ber_mean": 0.04131944444444444,
+      "lmmse_flat_ber_std": 0.0030763967268523165,
+      "ls_dnn_ber_mean": 0.049479166666666664,
+      "ls_dnn_ber_std": 0.0030665836341416115
+    },
+    {
+      "snr_db": 10.0,
+      "ls_ber_mean": 0.003645833333333333,
+      "ls_ber_std": 0.0021262931794992865,
+      "simplified_mmse_ber_mean": 0.003645833333333333,
+      "simplified_mmse_ber_std": 0.0021262931794992865,
+      "lmmse_flat_ber_mean": 0.0010416666666666667,
+      "lmmse_flat_ber_std": 0.0008505172717997146,
+      "ls_dnn_ber_mean": 0.0019097222222222222,
+      "ls_dnn_ber_std": 0.0006495932963149204
+    },
+    {
+      "snr_db": 15.0,
+      "ls_ber_mean": 0.0,
+      "ls_ber_std": 0.0,
+      "simplified_mmse_ber_mean": 0.0,
+      "simplified_mmse_ber_std": 0.0,
+      "lmmse_flat_ber_mean": 0.0,
+      "lmmse_flat_ber_std": 0.0,
+      "ls_dnn_ber_mean": 0.0,
+      "ls_dnn_ber_std": 0.0
+    },
+    {
+      "snr_db": 20.0,
+      "ls_ber_mean": 0.0,
+      "ls_ber_std": 0.0,
+      "simplified_mmse_ber_mean": 0.0,
+      "simplified_mmse_ber_std": 0.0,
+      "lmmse_flat_ber_mean": 0.0,
+      "lmmse_flat_ber_std": 0.0,
+      "ls_dnn_ber_mean": 0.0,
+      "ls_dnn_ber_std": 0.0
+    },
+    {
+      "snr_db": 25.0,
+      "ls_ber_mean": 0.0,
+      "ls_ber_std": 0.0,
+      "simplified_mmse_ber_mean": 0.0,
+      "simplified_mmse_ber_std": 0.0,
+      "lmmse_flat_ber_mean": 0.0,
+      "lmmse_flat_ber_std": 0.0,
+      "ls_dnn_ber_mean": 0.0,
+      "ls_dnn_ber_std": 0.0
+    },
+    {
+      "snr_db": 30.0,
+      "ls_ber_mean": 0.0,
+      "ls_ber_std": 0.0,
+      "simplified_mmse_ber_mean": 0.0,
+      "simplified_mmse_ber_std": 0.0,
+      "lmmse_flat_ber_mean": 0.0,
+      "lmmse_flat_ber_std": 0.0,
+      "ls_dnn_ber_mean": 0.0006944444444444445,
+      "ls_dnn_ber_std": 0.0006495932963149204
+    }
+  ],
+  "overall": {
+    "ls_ber_mean": 0.12710262345679013,
+    "ls_ber_std": 0.0018628707030104784,
+    "simplified_mmse_ber_mean": 0.1273148148148148,
+    "simplified_mmse_ber_std": 0.0016086158749528822,
+    "lmmse_flat_ber_mean": 0.10133101851851851,
+    "lmmse_flat_ber_std": 0.0022537271306998295,
+    "ls_dnn_ber_mean": 0.1083719135802469,
+    "ls_dnn_ber_std": 0.0030363414151158936
+  },
+  "n_seeds": 3
+}

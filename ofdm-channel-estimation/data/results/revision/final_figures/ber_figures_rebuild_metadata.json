@@ -1,0 +1,67 @@
+{
+  "note": "Rebuilt from existing revision/ber/aggregate_*.json; no retraining.",
+  "seeds": [
+    42,
+    123,
+    999
+  ],
+  "methods": [
+    "ls",
+    "simplified_mmse",
+    "lmmse_flat",
+    "ls_dnn"
+  ],
+  "zero_ber_plotting": "omit zero mean BER from log-scale curves",
+  "caption_note": "Zero BER values, corresponding to no observed bit errors in the finite test set, are omitted from the logarithmic plot.",
+  "snr_gain_unchanged": "snr_gain/*.json not modified",
+  "stored_ber_unchanged": "aggregate and per-seed JSON retain exact zeros",
+  "figures": {
+    "fig_ber_awgn": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_awgn.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_awgn.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_awgn.svg"
+    },
+    "figure_3_11_ber_awgn": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_11_ber_awgn.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_11_ber_awgn.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_11_ber_awgn.svg"
+    },
+    "figure_3_11_ber_awgn_word_ready": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_11_ber_awgn.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_11_ber_awgn.pdf"
+    },
+    "fig_ber_rayleigh": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rayleigh.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rayleigh.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rayleigh.svg"
+    },
+    "figure_3_12_ber_rayleigh": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_12_ber_rayleigh.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_12_ber_rayleigh.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_12_ber_rayleigh.svg"
+    },
+    "figure_3_12_ber_rayleigh_word_ready": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_12_ber_rayleigh.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_12_ber_rayleigh.pdf"
+    },
+    "fig_ber_rician": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rician.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rician.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\fig_ber_rician.svg"
+    },
+    "figure_3_13_ber_rician": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_13_ber_rician.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_13_ber_rician.pdf",
+      "svg": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\figure_3_13_ber_rician.svg"
+    },
+    "figure_3_13_ber_rician_word_ready": {
+      "png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_13_ber_rician.png",
+      "pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_13_ber_rician.pdf"
+    }
+  },
+  "tables": {
+    "awgn": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_tables\\ber_summary_awgn_four_estimators.md",
+    "rayleigh": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_tables\\ber_summary_rayleigh_four_estimators.md",
+    "rician": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_tables\\ber_summary_rician_four_estimators.md"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "caption": "Figure 2.2. Residual LS+DNN channel estimation architecture showing the feed-forward network and skip connection used to refine the LS estimate.",
+  "methodology_checklist": {
+    "input_h_ls_128_re_im": true,
+    "dnn_128_256_256_128_relu": true,
+    "residual_r_hat_f_theta": true,
+    "skip_connection_to_addition": true,
+    "output_h_ls_dnn_equals_h_ls_plus_r_hat": true,
+    "training_details_box": true,
+    "params_131712_note": true,
+    "no_dataset_sizes": true,
+    "no_internal_title": true
+  }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#ffffff"/>
+<defs>
+<style><![CDATA[
+  .main { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #111111; }
+  .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #333333; }
+  .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #444444; }
+  .section { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #555555; font-weight: 600; }
+]]></style>
+</defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0,0 10,4 0,8" fill="#222222"/></marker>
+<text x="130" y="72" class="section" text-anchor="middle" dominant-baseline="middle">Section A — Transmitter + Channel</text>
+<text x="130" y="470" class="section" text-anchor="middle" dominant-baseline="middle">Section B — Receiver</text>
+<rect x="48" y="170" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="123" y="215" class="main" text-anchor="middle" dominant-baseline="middle">Binary Data</text>
+<rect x="222" y="170" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="297" y="205" class="main" text-anchor="middle">
+<tspan x="297" dy="0">QPSK</tspan>
+<tspan x="297" dy="20">Modulation</tspan>
+</text>
+<rect x="396" y="170" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="471" y="205" class="main" text-anchor="middle">
+<tspan x="471" dy="0">Pilot</tspan>
+<tspan x="471" dy="20">Insertion</tspan>
+</text>
+<rect x="570" y="170" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="645" y="215" class="main" text-anchor="middle" dominant-baseline="middle">IFFT</text>
+<rect x="744" y="170" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="819" y="205" class="main" text-anchor="middle">
+<tspan x="819" dy="0">CP</tspan>
+<tspan x="819" dy="20">Addition</tspan>
+</text>
+<line x1="202" y1="215" x2="208" y2="215" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="376" y1="215" x2="382" y2="215" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="550" y1="215" x2="556" y2="215" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="724" y1="215" x2="730" y2="215" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<rect x="918" y="124" width="304" height="182" rx="10" ry="10" fill="#f4f4f4" stroke="#222222" stroke-width="2.0"/>
+<text x="1070" y="164" class="main" text-anchor="middle" dominant-baseline="middle">Channel</text>
+<text x="1070" y="198" class="sub" text-anchor="middle" dominant-baseline="middle">AWGN</text>
+<text x="1070" y="224" class="sub" text-anchor="middle" dominant-baseline="middle">Rayleigh Flat Fading</text>
+<text x="1070" y="250" class="sub" text-anchor="middle" dominant-baseline="middle">Rician Flat Fading</text>
+<text x="1070" y="286" class="small" text-anchor="middle" dominant-baseline="middle">Single-tap channel models</text>
+<line x1="898" y1="215" x2="904" y2="215" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="1070" y1="308" x2="1070" y2="360" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="1070" y1="370" x2="133" y2="370" stroke="#222222" stroke-width="2.0"/>
+<line x1="123" y1="370" x2="123" y2="508" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<rect x="48" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="123" y="555" class="main" text-anchor="middle">
+<tspan x="123" dy="0">CP</tspan>
+<tspan x="123" dy="20">Removal</tspan>
+</text>
+<rect x="222" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="297" y="565" class="main" text-anchor="middle" dominant-baseline="middle">FFT</text>
+<rect x="396" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="471" y="555" class="main" text-anchor="middle">
+<tspan x="471" dy="0">Pilot</tspan>
+<tspan x="471" dy="20">Extraction</tspan>
+</text>
+<line x1="202" y1="565" x2="208" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="376" y1="565" x2="382" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="550" y1="565" x2="556" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<rect x="570" y="455" width="440" height="220" rx="10" ry="10" fill="#f4f4f4" stroke="#222222" stroke-width="2.0"/>
+<text x="790" y="483" class="main" text-anchor="middle" dominant-baseline="middle">Channel Estimation</text>
+<rect x="596" y="509" width="181" height="58" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="686" y="538" class="sub" text-anchor="middle" dominant-baseline="middle">LS</text>
+<rect x="803" y="509" width="181" height="58" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="893" y="528" class="sub" text-anchor="middle">
+<tspan x="893" dy="0">Simplified-</tspan>
+<tspan x="893" dy="20">MMSE</tspan>
+</text>
+<rect x="596" y="593" width="181" height="58" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="686" y="622" class="sub" text-anchor="middle" dominant-baseline="middle">LMMSE-flat</text>
+<rect x="803" y="593" width="181" height="58" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="893" y="622" class="sub" text-anchor="middle" dominant-baseline="middle">LS+DNN</text>
+<text x="893" y="675" class="small" text-anchor="middle" dominant-baseline="middle">LS estimate + residual DNN correction</text>
+<line x1="1014" y1="565" x2="1020" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<rect x="1034" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="1109" y="565" class="main" text-anchor="middle" dominant-baseline="middle">Equalization</text>
+<rect x="1208" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="1283" y="555" class="main" text-anchor="middle">
+<tspan x="1283" dy="0">QPSK</tspan>
+<tspan x="1283" dy="20">Demodulation</tspan>
+</text>
+<rect x="1382" y="520" width="150" height="90" rx="10" ry="10" fill="#ffffff" stroke="#222222" stroke-width="2.0"/>
+<text x="1457" y="555" class="main" text-anchor="middle">
+<tspan x="1457" dy="0">Recovered</tspan>
+<tspan x="1457" dy="20">Bits</tspan>
+</text>
+<line x1="1188" y1="565" x2="1194" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+<line x1="1362" y1="565" x2="1368" y2="565" stroke="#222222" stroke-width="2.0" marker-end="url(#arrowhead)"/>
+</svg>

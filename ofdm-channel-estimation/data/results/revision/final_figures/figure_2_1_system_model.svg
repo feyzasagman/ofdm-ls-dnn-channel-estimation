@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="980" viewBox="0 0 2240 980">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+<polygon points="0,0 8,3 0,6" fill="#222"/></marker>
+</defs>
+<rect x="357" y="171" width="108" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="411" y="200" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Data Bits</text>
+<rect x="495" y="171" width="78" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="534" y="200" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">QPSK</text>
+<line x1="467" y1="200" x2="485" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="603" y="171" width="118" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="662" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="662" dy="0">Pilot</tspan><tspan x="662" dy="17">Insertion</tspan></text>
+<line x1="575" y1="200" x2="593" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="751" y="171" width="128" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="815" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="815" dy="0">OFDM</tspan><tspan x="815" dy="17">Modulation</tspan></text>
+<line x1="723" y1="200" x2="741" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="909" y="152" width="152" height="96" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="985" y="172" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Channel</text>
+<text x="985" y="194" font-family="Arial, Helvetica, sans-serif" font-size="11px" fill="#111" text-anchor="middle" dominant-baseline="middle">AWGN</text>
+<text x="985" y="210" font-family="Arial, Helvetica, sans-serif" font-size="11px" fill="#111" text-anchor="middle" dominant-baseline="middle">Rayleigh flat fading</text>
+<text x="985" y="226" font-family="Arial, Helvetica, sans-serif" font-size="11px" fill="#111" text-anchor="middle" dominant-baseline="middle">Rician flat fading</text>
+<text x="985" y="268" font-family="Arial, Helvetica, sans-serif" font-size="12px" fill="#111" text-anchor="middle" dominant-baseline="middle">single-tap; Rician K = 6 dB</text>
+<line x1="881" y1="200" x2="899" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1091" y="171" width="108" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1145" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="1145" dy="0">FFT</tspan><tspan x="1145" dy="17">Receiver</tspan></text>
+<line x1="1063" y1="200" x2="1081" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1229" y="171" width="118" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1288" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="1288" dy="0">Pilot</tspan><tspan x="1288" dy="17">Extraction</tspan></text>
+<line x1="1201" y1="200" x2="1219" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1377" y="171" width="128" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1441" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="1441" dy="0">Channel</tspan><tspan x="1441" dy="17">Estimation</tspan></text>
+<line x1="1349" y1="200" x2="1367" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1535" y="171" width="108" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1589" y="200" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Equalization</text>
+<line x1="1507" y1="200" x2="1525" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1673" y="171" width="108" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1727" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle"><tspan x="1727" dy="0">QPSK</tspan><tspan x="1727" dy="17">Demodulation</tspan></text>
+<line x1="1645" y1="200" x2="1663" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1811" y="171" width="72" height="58" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1847" y="200" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">BER</text>
+<line x1="1783" y1="200" x2="1801" y2="200" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1441" y1="231" x2="1441" y2="328" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1141" y1="320" x2="1741" y2="320" stroke="#222" stroke-width="1.8"/>
+<line x1="1141" y1="320" x2="1141" y2="445" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1057" y="439" width="168" height="62" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="1141" y="470" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">LS</text>
+<line x1="1341" y1="320" x2="1341" y2="445" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1257" y="439" width="168" height="62" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="1341" y="470" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">Simplified-MMSE</text>
+<line x1="1541" y1="320" x2="1541" y2="445" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1457" y="439" width="168" height="62" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="1541" y="470" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">LMMSE-flat</text>
+<line x1="1741" y1="320" x2="1741" y2="445" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1657" y="439" width="168" height="62" rx="6" ry="6" fill="#fafafa" stroke="#222" stroke-width="1.8"/>
+<text x="1741" y="470" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">LS+DNN</text>
+<line x1="1141" y1="537" x2="1741" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1141" y1="503" x2="1141" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1341" y1="503" x2="1341" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1541" y1="503" x2="1541" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1741" y1="503" x2="1741" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1441" y1="537" x2="1589" y2="537" stroke="#222" stroke-width="1.8"/>
+<line x1="1589" y1="537" x2="1589" y2="223" stroke="#222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1441" y1="539" x2="1441" y2="668" stroke="#666" stroke-width="1.2" stroke-dasharray="5,4"/>
+<rect x="1336" y="614" width="210" height="52" rx="6" ry="6" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="1441" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15px" fill="#111" text-anchor="middle" dominant-baseline="middle">MSE / NMSE Evaluation</text>
+</svg>

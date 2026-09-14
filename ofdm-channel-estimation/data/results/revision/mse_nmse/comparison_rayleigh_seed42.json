@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "seed": 42,
+    "channel_type": "rayleigh",
+    "channel_model_name": "single-tap Rayleigh flat fading",
+    "flat_fading": true,
+    "frequency_selective": false,
+    "raw_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\raw\\rayleigh_ns100_seed42.npz",
+    "processed_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\processed\\rayleigh_ns100_seed42_residual_processed.npz",
+    "model_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\models\\rayleigh_ns100_seed42_residual_processed_dnn.keras",
+    "split_strategy": "snr_stratified"
+  },
+  "overall": {
+    "ls_mse": 1.305845278612377,
+    "ls_nmse": 1.2644226541776107,
+    "simplified_mmse_mse": 1.277609295874993,
+    "simplified_mmse_nmse": 1.2370823430237083,
+    "lmmse_flat_mse": 0.10788490987489333,
+    "lmmse_flat_nmse": 0.1044627003856688,
+    "ls_dnn_mse": 0.3042638240908709,
+    "ls_dnn_nmse": 0.2946122931470253
+  },
+  "per_snr": [
+    {
+      "snr_db": -10.0,
+      "ls_mse": 8.152997948533448,
+      "ls_nmse": 7.862752366987695,
+      "simplified_mmse_mse": 7.959370113350255,
+      "simplified_mmse_nmse": 7.676017655534075,
+      "lmmse_flat_mse": 0.7211649461246801,
+      "lmmse_flat_nmse": 0.6954915753597554,
+      "ls_dnn_mse": 1.8606042015216175,
+      "ls_dnn_nmse": 1.794366953345411
+    },
+    {
+      "snr_db": -5.0,
+      "ls_mse": 2.375578097938559,
+      "ls_nmse": 2.112469269804408,
+      "simplified_mmse_mse": 2.3246790309371343,
+      "simplified_mmse_nmse": 2.0672075648764454,
+      "lmmse_flat_mse": 0.17935941273477013,
+      "lmmse_flat_nmse": 0.15949433444480546,
+      "ls_dnn_mse": 0.5645299528523335,
+      "ls_dnn_nmse": 0.5020050396657301
+    },
+    {
+      "snr_db": 0.0,
+      "ls_mse": 0.8712798992943036,
+      "ls_nmse": 0.6888073089712659,
+      "simplified_mmse_mse": 0.8612083185675807,
+      "simplified_mmse_nmse": 0.6808450244940504,
+      "lmmse_flat_mse": 0.04859987583267896,
+      "lmmse_flat_nmse": 0.038421579237348666,
+      "ls_dnn_mse": 0.19268763064629382,
+      "ls_dnn_nmse": 0.15233296262776597
+    },
+    {
+      "snr_db": 5.0,
+      "ls_mse": 0.23515166573052237,
+      "ls_nmse": 0.19618945264842666,
+      "simplified_mmse_mse": 0.23550993634888567,
+      "simplified_mmse_nmse": 0.19648836150921806,
+      "lmmse_flat_mse": 0.012087743958306437,
+      "lmmse_flat_nmse": 0.010084929075740118,
+      "ls_dnn_mse": 0.06255504758572836,
+      "ls_dnn_nmse": 0.05219031941838105
+    },
+    {
+      "snr_db": 10.0,
+      "ls_mse": 0.09252582777458464,
+      "ls_nmse": 0.06801010027578556,
+      "simplified_mmse_mse": 0.09264498171684203,
+      "simplified_mmse_nmse": 0.06809768308110695,
+      "lmmse_flat_mse": 0.007575351305209763,
+      "lmmse_flat_nmse": 0.0055681793320106485,
+      "ls_dnn_mse": 0.028684945991404677,
+      "ls_dnn_nmse": 0.02108455660654783
+    },
+    {
+      "snr_db": 15.0,
+      "ls_mse": 0.015440499253432988,
+      "ls_nmse": 0.021786114065460604,
+      "simplified_mmse_mse": 0.015438428715642303,
+      "simplified_mmse_nmse": 0.021783192594351134,
+      "lmmse_flat_mse": 0.0014011235897439262,
+      "lmmse_flat_nmse": 0.0019769463308760547,
+      "ls_dnn_mse": 0.010487541133997833,
+      "ls_dnn_nmse": 0.014797628215336806
+    },
+    {
+      "snr_db": 20.0,
+      "ls_mse": 0.00742880382867097,
+      "ls_nmse": 0.007073725665240645,
+      "simplified_mmse_mse": 0.0074279031744213676,
+      "simplified_mmse_nmse": 0.007072868060001921,
+      "lmmse_flat_mse": 0.0005313367222031121,
+      "lmmse_flat_nmse": 0.0005059401614869944,
+      "ls_dnn_mse": 0.008223251411471972,
+      "ls_dnn_nmse": 0.007830200649067646
+    },
+    {
+      "snr_db": 25.0,
+      "ls_mse": 0.001571421952592022,
+      "ls_nmse": 0.002289158397722448,
+      "simplified_mmse_mse": 0.0015715547642055267,
+      "simplified_mmse_nmse": 0.002289351870150314,
+      "lmmse_flat_mse": 0.00017169540263128124,
+      "lmmse_flat_nmse": 0.00025011612707549866,
+      "ls_dnn_mse": 0.004674508868692692,
+      "ls_dnn_nmse": 0.006809559465772647
+    },
+    {
+      "snr_db": 30.0,
+      "ls_mse": 0.0006333432052796295,
+      "ls_nmse": 0.0007330291190796522,
+      "simplified_mmse_mse": 0.000633395299969079,
+      "simplified_mmse_nmse": 0.0007330894132834861,
+      "lmmse_flat_mse": 7.270320381617785e-05,
+      "lmmse_flat_nmse": 8.41464233031622e-05,
+      "ls_dnn_mse": 0.005927336806298174,
+      "ls_dnn_nmse": 0.006860278031546599
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Figure 3.7. Representative training and validation loss curves of the LS+DNN models for AWGN, Rayleigh, and Rician scenarios (seed = 42).

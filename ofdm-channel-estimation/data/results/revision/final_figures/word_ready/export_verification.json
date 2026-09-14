@@ -1,0 +1,35 @@
+[
+  {
+    "path_png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_11_ber_awgn.png",
+    "path_pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_11_ber_awgn.pdf",
+    "channel": "awgn",
+    "size_kb": 250.05,
+    "width": 2516,
+    "height": 1706,
+    "verify": "OK",
+    "data_fingerprint": "74a8047543ba5784",
+    "md5_png": "43b5ed2827f4ecd10a7c765f0f4c02e6"
+  },
+  {
+    "path_png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_12_ber_rayleigh.png",
+    "path_pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_12_ber_rayleigh.pdf",
+    "channel": "rayleigh",
+    "size_kb": 264.73,
+    "width": 2516,
+    "height": 1706,
+    "verify": "OK",
+    "data_fingerprint": "5a101b1bcd1f6fe5",
+    "md5_png": "8a70c54754f42291988a512c9d9c1dd6"
+  },
+  {
+    "path_png": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_13_ber_rician.png",
+    "path_pdf": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\final_figures\\word_ready\\figure_3_13_ber_rician.pdf",
+    "channel": "rician",
+    "size_kb": 245.83,
+    "width": 2516,
+    "height": 1706,
+    "verify": "OK",
+    "data_fingerprint": "d12d9f009d89b8e0",
+    "md5_png": "34a3f8accb61af1f58fbab628c7d64fb"
+  }
+]

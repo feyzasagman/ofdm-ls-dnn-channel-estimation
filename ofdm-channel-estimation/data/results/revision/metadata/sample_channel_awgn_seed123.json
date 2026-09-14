@@ -1,0 +1,14 @@
+{
+  "seed": 123,
+  "channel_type": "awgn",
+  "channel_model_name": "AWGN (deterministic h=1, no fading)",
+  "flat_fading": true,
+  "frequency_selective": false,
+  "raw_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\raw\\awgn_ns100_seed123.npz",
+  "processed_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\processed\\awgn_ns100_seed123_residual_processed.npz",
+  "model_path": "C:\\Users\\feyza\\OneDrive\\Music\\Desktop\\projeler\\Enhancing_Least_Square_Channel_Estimation_Using_Deep_Learning-main\\ofdm-channel-estimation\\data\\results\\revision\\models\\awgn_ns100_seed123_residual_processed_dnn.keras",
+  "split_strategy": "snr_stratified",
+  "snr_db": 10.0,
+  "sample_index": 400,
+  "caption_note": "Flat fading: |H| is constant across subcarriers."
+}

@@ -1,0 +1,50 @@
+{
+  "channel_type": "rayleigh",
+  "seed": 999,
+  "high_snr_levels_db": [
+    20.0,
+    25.0,
+    30.0
+  ],
+  "rows": [
+    {
+      "channel_type": "rayleigh",
+      "seed": 999,
+      "snr_db": 20.0,
+      "ls_mse": 0.005923275012291538,
+      "ls_dnn_mse": 0.00845697642703903,
+      "dnn_worse_than_ls": true,
+      "ratio_dnn_over_ls": 1.427753465690812,
+      "percent_difference": 42.7753465690812
+    },
+    {
+      "channel_type": "rayleigh",
+      "seed": 999,
+      "snr_db": 25.0,
+      "ls_mse": 0.0031445503363917403,
+      "ls_dnn_mse": 0.010358332753461848,
+      "dnn_worse_than_ls": true,
+      "ratio_dnn_over_ls": 3.2940584965631894,
+      "percent_difference": 229.40584965631896
+    },
+    {
+      "channel_type": "rayleigh",
+      "seed": 999,
+      "snr_db": 30.0,
+      "ls_mse": 0.0007245544132824637,
+      "ls_dnn_mse": 0.006790894066967421,
+      "dnn_worse_than_ls": true,
+      "ratio_dnn_over_ls": 9.372510804540537,
+      "percent_difference": 837.2510804540539
+    }
+  ],
+  "n_worse_than_ls": 3,
+  "diagnostic_hypotheses": [
+    "mixed-SNR training may leave residual bias at high SNR",
+    "residual prediction bias when LS is already accurate",
+    "limited training samples per SNR stratum",
+    "float precision limits for very small NMSE differences",
+    "model capacity may be insufficient for near-oracle refinement"
+  ],
+  "note": "Diagnostic hypotheses are not proven causes; they require targeted ablation experiments."
+}

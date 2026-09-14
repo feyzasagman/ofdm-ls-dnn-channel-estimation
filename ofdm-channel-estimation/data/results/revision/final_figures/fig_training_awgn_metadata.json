@@ -1,0 +1,7 @@
+{
+  "channel": "awgn",
+  "seed": 42,
+  "epochs_run": 58,
+  "early_stopping_epoch": 58,
+  "note": "Representative single-seed curve (not averaged across seeds)."
+}
