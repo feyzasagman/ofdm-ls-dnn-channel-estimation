@@ -13,11 +13,16 @@ def apply_rician_flat_fading(
     k_factor_db: float = 6.0,
     rng: Optional[np.random.Generator] = None,
 ) -> tuple[np.ndarray, complex, float]:
-    """Apply single-tap Rician fading and AWGN.
+    """Apply single-tap Rician flat fading and AWGN.
 
-    Channel model:
+    Channel model (single-tap flat fading):
         h = h_los + h_scatter
-    where K = P_los / P_scatter.
+
+    Rician K-factor (linear): K = P_los / P_scatter, with K_dB = 10*log10(K).
+
+    Component scaling for E[|h|^2] ≈ 1:
+        |h_los| = sqrt(K / (K + 1))
+        h_scatter ~ CN(0, 1 / (2*(K + 1)))  (circularly symmetric)
     """
     x = np.asarray(tx_signal, dtype=np.complex128)
     if x.size == 0:

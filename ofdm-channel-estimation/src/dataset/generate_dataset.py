@@ -13,8 +13,10 @@ from src.channels.rician import apply_rician_flat_fading
 from src.core.ofdm_modem import ofdm_demodulate, ofdm_modulate, place_pilots, qpsk_modulate
 from src.core.ofdm_params import OFDMParams
 from src.core.pilots import generate_pilot_indices, generate_pilot_symbols, get_data_indices
+from src.core.channel_models import channel_metadata
+from src.estimators.lmmse_flat_estimator import estimate_lmmse_flat_channel
 from src.estimators.ls_estimator import estimate_ls_channel
-from src.estimators.mmse_estimator import estimate_mmse_channel
+from src.estimators.mmse_estimator import estimate_simplified_mmse_channel
 
 DEFAULT_SNR_LIST: tuple[float, ...] = (-10, -5, 0, 5, 10, 15, 20, 25, 30)
 
@@ -55,8 +57,11 @@ def generate_raw_dataset(
     n_total = len(snr_db_list) * n_samples_per_snr
     true_channel = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
     ls_estimate = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
-    mmse_estimate = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
+    simplified_mmse_estimate = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
+    lmmse_flat_estimate = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
     rx_freq_all = np.zeros((n_total, params.n_subcarriers), dtype=np.complex128)
+    n_bits = 2 * data_indices.size
+    bits_all = np.zeros((n_total, n_bits), dtype=np.uint8)
     snr_all = np.zeros(n_total, dtype=np.float64)
     noise_variance_all = np.zeros(n_total, dtype=np.float64)
     channel_type_all = np.full(n_total, channel_name, dtype="<U16")
@@ -97,17 +102,27 @@ def generate_raw_dataset(
                 pilot_symbols=pilot_symbols,
                 n_subcarriers=params.n_subcarriers,
             )
-            h_mmse_full, _ = estimate_mmse_channel(
+            h_simp_full, _ = estimate_simplified_mmse_channel(
                 rx_freq=rx_freq,
                 pilot_indices=pilot_indices,
                 pilot_symbols=pilot_symbols,
                 n_subcarriers=params.n_subcarriers,
                 noise_variance=noise_var,
             )
+            h_lmmse_full, _ = estimate_lmmse_flat_channel(
+                rx_freq=rx_freq,
+                pilot_indices=pilot_indices,
+                pilot_symbols=pilot_symbols,
+                n_subcarriers=params.n_subcarriers,
+                noise_variance=noise_var,
+                channel_prior_variance=1.0,
+            )
 
             true_channel[idx] = np.full(params.n_subcarriers, h_true_coeff, dtype=np.complex128)
             ls_estimate[idx] = h_ls_full
-            mmse_estimate[idx] = h_mmse_full
+            simplified_mmse_estimate[idx] = h_simp_full
+            lmmse_flat_estimate[idx] = h_lmmse_full
+            bits_all[idx] = bits
             rx_freq_all[idx] = rx_freq
             snr_all[idx] = float(snr_db)
             noise_variance_all[idx] = float(noise_var)
@@ -125,7 +140,10 @@ def generate_raw_dataset(
         save_path,
         true_channel=true_channel,
         ls_estimate=ls_estimate,
-        mmse_estimate=mmse_estimate,
+        simplified_mmse_estimate=simplified_mmse_estimate,
+        lmmse_flat_estimate=lmmse_flat_estimate,
+        mmse_estimate=simplified_mmse_estimate,
+        bits=bits_all,
         rx_freq=rx_freq_all,
         snr_db=snr_all,
         channel_type=channel_type_all,
@@ -138,6 +156,9 @@ def generate_raw_dataset(
         modulation_order=params.modulation_order,
         random_seed=random_seed,
         k_factor_db=float(k_factor_db),
+        channel_model_name=channel_metadata(channel_name, k_factor_db=k_factor_db)["channel_model_name"],
+        flat_fading=True,
+        frequency_selective=False,
     )
     return save_path
 

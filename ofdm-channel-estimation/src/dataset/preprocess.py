@@ -6,6 +6,13 @@ from pathlib import Path
 
 import numpy as np
 
+from src.core.split import (
+    build_split_report,
+    save_split_report,
+    stratified_split_indices,
+    validate_split_disjoint,
+)
+
 
 def preprocess_for_dnn(
     raw_dataset_path: str | Path,
@@ -15,6 +22,7 @@ def preprocess_for_dnn(
     val_ratio: float = 0.1,
     random_seed: int = 42,
     output_path: str | Path | None = None,
+    split_report_path: str | Path | None = None,
 ) -> Path:
     """Load raw NPZ, prepare DNN tensors, split, optionally normalize, save NPZ.
 
@@ -49,12 +57,16 @@ def preprocess_for_dnn(
     x = _complex_to_features(x_complex)
     y = _complex_to_features(y_complex)
 
-    split = _split_indices(
-        n_samples=x.shape[0],
+    split = stratified_split_indices(
+        snr_db=snr_db,
         test_ratio=test_ratio,
         val_ratio=val_ratio,
         random_seed=random_seed,
     )
+    validate_split_disjoint(split)
+    split_report = build_split_report(snr_db, split, random_seed)
+    if split_report_path is not None:
+        save_split_report(split_report, split_report_path)
 
     x_train = x[split["train"]]
     y_train = y[split["train"]]
@@ -103,6 +115,11 @@ def preprocess_for_dnn(
         residual_mode=bool(residual_mode),
         normalize=bool(normalize),
         n_features=x.shape[1],
+        train_indices=split["train"],
+        val_indices=split["val"],
+        test_indices=split["test"],
+        split_random_seed=int(random_seed),
+        split_strategy="snr_stratified",
     )
     return save_path
 
@@ -126,7 +143,7 @@ def _split_indices(
     val_ratio: float,
     random_seed: int,
 ) -> dict[str, np.ndarray]:
-    """Create train/val/test indices with random shuffling."""
+    """Deprecated random split kept for backward compatibility."""
     if n_samples < 3:
         raise ValueError("Need at least 3 samples for train/val/test split.")
 
