@@ -1,25 +1,34 @@
-"""Practical MMSE-like channel estimation from OFDM pilots."""
+"""Simplified (Wiener-shrinkage) channel estimation from OFDM pilots.
+
+This is NOT full covariance-based pilot-domain LMMSE. See
+``estimate_lmmse_flat_channel`` in ``lmmse_flat_estimator.py`` for the joint
+scalar LMMSE baseline under single-tap flat fading.
+"""
 
 from __future__ import annotations
 
 import numpy as np
 
 
-def estimate_mmse_channel(
+def estimate_simplified_mmse_channel(
     rx_freq: np.ndarray,
     pilot_indices: np.ndarray,
     pilot_symbols: np.ndarray,
     n_subcarriers: int,
     noise_variance: float,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Estimate channel using LS pilots + noise-aware shrinkage + interpolation.
+    """Per-pilot Wiener shrinkage + linear interpolation (simplified MMSE).
 
-    This is a lightweight LMMSE-inspired estimator:
-      1) Pilot LS estimate: H_ls = Yp / Xp
-      2) Shrinkage per pilot:
-            alpha = P_h / (P_h + P_n)
-         where P_h = |H_ls|^2 and P_n = noise_variance / |Xp|^2
-      3) Interpolate shrunk pilot estimates across all subcarriers.
+    Assumptions:
+        - Oracle noise variance ``noise_variance`` is available at the receiver.
+        - Each pilot LS estimate is treated independently for shrinkage.
+        - Real/imag parts are linearly interpolated across subcarriers.
+
+    Steps:
+      1) Pilot LS: H_ls,p = Y_p / X_p
+      2) Per-pilot shrinkage: alpha_p = |H_ls,p|^2 / (|H_ls,p|^2 + sigma_n^2/|X_p|^2)
+      3) H_shrunk,p = alpha_p * H_ls,p
+      4) Interpolate shrunk pilots to all subcarriers.
     """
     y = np.asarray(rx_freq, dtype=np.complex128).ravel()
     p_idx = np.asarray(pilot_indices, dtype=int).ravel()
@@ -85,3 +94,20 @@ def _validate_inputs(
         raise ValueError("pilot_symbols must be non-zero.")
     if not np.isfinite(noise_variance) or noise_variance < 0.0:
         raise ValueError("noise_variance must be a finite non-negative float.")
+
+
+def estimate_mmse_channel(
+    rx_freq: np.ndarray,
+    pilot_indices: np.ndarray,
+    pilot_symbols: np.ndarray,
+    n_subcarriers: int,
+    noise_variance: float,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Backward-compatible alias for ``estimate_simplified_mmse_channel``."""
+    return estimate_simplified_mmse_channel(
+        rx_freq=rx_freq,
+        pilot_indices=pilot_indices,
+        pilot_symbols=pilot_symbols,
+        n_subcarriers=n_subcarriers,
+        noise_variance=noise_variance,
+    )
